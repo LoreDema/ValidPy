@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>validpy.SVM.src package &mdash; ValidPy 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ValidPy 1.0 documentation" href="index.html"/>
+        <link rel="up" title="validpy.SVM package" href="validpy.SVM.html"/>
+        <link rel="next" title="validpy.predict package" href="validpy.predict.html"/>
+        <link rel="prev" title="validpy.SVM package" href="validpy.SVM.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> ValidPy
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-k-cross-validation">ANN k-cross validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#svm-k-cross-validation">SVM k-cross validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-vs-svm-k-cross-validation">ANN vs SVM k-cross validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-test">ANN test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#svm-test">SVM test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#svm-predict">SVM predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-predict">ANN predict</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">validpy</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="validpy.html">validpy package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="validpy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="validpy.ANN.html">validpy.ANN package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.ANN_vs_SVM.html">validpy.ANN_vs_SVM package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="validpy.SVM.html">validpy.SVM package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.predict.html">validpy.predict package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.test.html">validpy.test package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="validpy.html#module-validpy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ValidPy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="modules.html">validpy</a> &raquo;</li>
+      
+          <li><a href="validpy.html">validpy package</a> &raquo;</li>
+      
+          <li><a href="validpy.SVM.html">validpy.SVM package</a> &raquo;</li>
+      
+    <li>validpy.SVM.src package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/validpy.SVM.src.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="validpy-svm-src-package">
+<h1>validpy.SVM.src package<a class="headerlink" href="#validpy-svm-src-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-validpy.SVM.src.experimentKcross">
+<span id="validpy-svm-src-experimentkcross-module"></span><h2>validpy.SVM.src.experimentKcross module<a class="headerlink" href="#module-validpy.SVM.src.experimentKcross" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="validpy.SVM.src.experimentKcross.grid">
+<code class="descclassname">validpy.SVM.src.experimentKcross.</code><code class="descname">grid</code><span class="sig-paren">(</span><em>conf</em>, <em>data_sets</em>, <em>output_length</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.SVM.src.experimentKcross.grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the k-cross validation over all possible parameter combinations</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>conf</strong> (<em>JSON</em>) &#8211; configuration JSON</li>
+<li><strong>data_sets</strong> (<em>list[list[tuple(list[float], list[float])]]</em>) &#8211; examples as list of tuple (input, output)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.SVM.src.experimentKcross.k_cross_experiment">
+<code class="descclassname">validpy.SVM.src.experimentKcross.</code><code class="descname">k_cross_experiment</code><span class="sig-paren">(</span><em>kernel</em>, <em>c</em>, <em>epsilon</em>, <em>degree</em>, <em>data_sets</em>, <em>out_folder</em>, <em>n_processes</em>, <em>output_length</em>, <em>csv=None</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.SVM.src.experimentKcross.k_cross_experiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the k-cross validation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>kernel</strong> (<em>string</em>) &#8211; Kernel function (possible values: linear, poly, rbf, sigmoid)</li>
+<li><strong>c</strong> (<em>float</em>) &#8211; penalty parameter C of the error term</li>
+<li><strong>epsilon</strong> (<em>float</em>) &#8211; Epsilon in the epsilon-SVR model, it specifies the epsilon-tube
+within which no penalty is associated in the training loss function
+with points predicted within a distance epsilon from the actual value</li>
+<li><strong>degree</strong> (<em>int</em>) &#8211; Degree of kernel function is significant only in poly, rbf, sigmoid</li>
+<li><strong>data_sets</strong> (<em>list[list[tuple(list[float], list[float])]]</em>) &#8211; List of the k data sets</li>
+<li><strong>out_folder</strong> (<em>str</em>) &#8211; Path to the output folder</li>
+<li><strong>output_length</strong> (<em>int</em>) &#8211; Output length</li>
+<li><strong>n_processes</strong> (<em>int</em>) &#8211; Number of parallel processes</li>
+<li><strong>csv</strong> (<em>FileIO</em>) &#8211; Output csv file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Average error and average training time over the k experiments</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple(float, float)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.SVM.src.experimentKcross.k_train">
+<code class="descclassname">validpy.SVM.src.experimentKcross.</code><code class="descname">k_train</code><span class="sig-paren">(</span><em>kernel</em>, <em>c</em>, <em>epsilon</em>, <em>degree</em>, <em>train</em>, <em>valid</em>, <em>folder</em>, <em>report</em>, <em>svr</em>, <em>q</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.SVM.src.experimentKcross.k_train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the training and the model validation, this function have to been called via Process()
+<a class="reference external" href="https://docs.python.org/3/library/multiprocessing.html">https://docs.python.org/3/library/multiprocessing.html</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>kernel</strong> (<em>string</em>) &#8211; Kernel function (possible values: linear, poly, rbf, sigmoid)</li>
+<li><strong>c</strong> (<em>float</em>) &#8211; penalty parameter C of the error term</li>
+<li><strong>epsilon</strong> (<em>float</em>) &#8211; Epsilon in the epsilon-SVR model, it specifies the epsilon-tube
+within which no penalty is associated in the training loss function
+with points predicted within a distance epsilon from the actual value</li>
+<li><strong>degree</strong> (<em>int</em>) &#8211; Degree of kernel function is significant only in poly, rbf, sigmoid</li>
+<li><strong>train</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; training set</li>
+<li><strong>valid</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; validation set</li>
+<li><strong>folder</strong> (<em>str</em>) &#8211; path to the output experiment folder</li>
+<li><strong>report</strong> (<em>str</em>) &#8211; path to the output experiment report file (.txt)</li>
+<li><strong>svr</strong> (<em>list[str]</em>) &#8211; list of file name where to save models</li>
+<li><strong>q</strong> (<em>Queue</em>) &#8211; Queue</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">training time and average validation error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list[float]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.SVM.src.experimentKcross.main">
+<code class="descclassname">validpy.SVM.src.experimentKcross.</code><code class="descname">main</code><span class="sig-paren">(</span><em>conf_file</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.SVM.src.experimentKcross.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads configuration file and runs the k-cross validation experiments</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>conf_file</strong> (<em>str</em>) &#8211; Path to the configuration file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.SVM.src.experimentKcross.split_data_set_file">
+<code class="descclassname">validpy.SVM.src.experimentKcross.</code><code class="descname">split_data_set_file</code><span class="sig-paren">(</span><em>file_name</em>, <em>input_length</em>, <em>output_length</em>, <em>k</em>, <em>separator='</em>, <em>'</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.SVM.src.experimentKcross.split_data_set_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the data set from csv, split the input and the output,
+shuffle the example list and split it in to k subsets</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_name</strong> (<em>str</em>) &#8211; path to the csv file</li>
+<li><strong>input_length</strong> (<em>int</em>) &#8211; input length</li>
+<li><strong>output_length</strong> (<em>int</em>) &#8211; output length</li>
+<li><strong>k</strong> (<em>int</em>) &#8211; number of subsets</li>
+<li><strong>separator</strong> (<em>Optional[str]</em>) &#8211; csv file separators, default = &#8216;,&#8217;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list of subsets</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list[list[tuple]]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.SVM.src.experimentKcross.validate">
+<code class="descclassname">validpy.SVM.src.experimentKcross.</code><code class="descname">validate</code><span class="sig-paren">(</span><em>clfs</em>, <em>validation_set</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.SVM.src.experimentKcross.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the average euclidean distance activating
+the model over a validation set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>clfs</strong> (<em>list[SVR]</em>) &#8211; list of model</li>
+<li><strong>validation_set</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; Validation set</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">average euclidean distance</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-validpy.SVM.src">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-validpy.SVM.src" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="validpy.predict.html" class="btn btn-neutral float-right" title="validpy.predict package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="validpy.SVM.html" class="btn btn-neutral" title="validpy.SVM package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Lorenzo De Mattei.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+simplejson
+numpy
+pybrain
+scipy
+matplotlib
+scikit-learn

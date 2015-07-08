@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>validpy.ANN.src package &mdash; ValidPy 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ValidPy 1.0 documentation" href="index.html"/>
+        <link rel="up" title="validpy.ANN package" href="validpy.ANN.html"/>
+        <link rel="next" title="validpy.ANN_vs_SVM package" href="validpy.ANN_vs_SVM.html"/>
+        <link rel="prev" title="validpy.ANN package" href="validpy.ANN.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> ValidPy
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-k-cross-validation">ANN k-cross validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#svm-k-cross-validation">SVM k-cross validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-vs-svm-k-cross-validation">ANN vs SVM k-cross validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-test">ANN test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#svm-test">SVM test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#svm-predict">SVM predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ann-predict">ANN predict</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">validpy</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="validpy.html">validpy package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="validpy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="validpy.ANN.html">validpy.ANN package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.ANN_vs_SVM.html">validpy.ANN_vs_SVM package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.SVM.html">validpy.SVM package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.predict.html">validpy.predict package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="validpy.test.html">validpy.test package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="validpy.html#module-validpy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ValidPy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="modules.html">validpy</a> &raquo;</li>
+      
+          <li><a href="validpy.html">validpy package</a> &raquo;</li>
+      
+          <li><a href="validpy.ANN.html">validpy.ANN package</a> &raquo;</li>
+      
+    <li>validpy.ANN.src package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/validpy.ANN.src.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="validpy-ann-src-package">
+<h1>validpy.ANN.src package<a class="headerlink" href="#validpy-ann-src-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-validpy.ANN.src.BackPropTrainer">
+<span id="validpy-ann-src-backproptrainer-module"></span><h2>validpy.ANN.src.BackPropTrainer module<a class="headerlink" href="#module-validpy.ANN.src.BackPropTrainer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="validpy.ANN.src.BackPropTrainer.Trainer">
+<em class="property">class </em><code class="descclassname">validpy.ANN.src.BackPropTrainer.</code><code class="descname">Trainer</code><span class="sig-paren">(</span><em>network</em>, <em>momentum</em>, <em>learning_rate</em>, <em>lr_decay</em>, <em>data_set</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.BackPropTrainer.Trainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Backpropagation trainer</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd>trainer (BackpropTrainer): Backpropagation trainer
+training_errors (list): List containing the training error for each epoch
+validation_errors (list): List containing the validation error for each epoch</dd>
+</dl>
+<dl class="method">
+<dt id="validpy.ANN.src.BackPropTrainer.Trainer.plot_epochs">
+<code class="descname">plot_epochs</code><span class="sig-paren">(</span><em>folder</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.BackPropTrainer.Trainer.plot_epochs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the training and validation errors over the epochs</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>folder</strong> (<em>str</em>) &#8211; path to the plot file (.png)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="validpy.ANN.src.BackPropTrainer.Trainer.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>network</em>, <em>valid_bp</em>, <em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.BackPropTrainer.Trainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train until convergence, stopping the training when the training
+doesn&#8217;t reduce the validation error after 1000 continuous epochs</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>network</strong> (<a class="reference internal" href="#validpy.ANN.src.NeuralNetwork.NeuralNetwork" title="validpy.ANN.src.NeuralNetwork.NeuralNetwork"><em>NeuralNetwork.NeuralNetwork</em></a>) &#8211; model</li>
+<li><strong>valid_bp</strong> (<em>SupervisedDataSet</em>) &#8211; Validation set</li>
+<li><strong>path</strong> (<em>str</em>) &#8211; Path where to save the trained model</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-validpy.ANN.src.NeuralNetwork">
+<span id="validpy-ann-src-neuralnetwork-module"></span><h2>validpy.ANN.src.NeuralNetwork module<a class="headerlink" href="#module-validpy.ANN.src.NeuralNetwork" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="validpy.ANN.src.NeuralNetwork.NeuralNetwork">
+<em class="property">class </em><code class="descclassname">validpy.ANN.src.NeuralNetwork.</code><code class="descname">NeuralNetwork</code><span class="sig-paren">(</span><em>hidden_layers</em>, <em>units</em>, <em>function</em>, <em>input_length</em>, <em>output_length</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.NeuralNetwork.NeuralNetwork" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class containing the ANN model</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd>network (FeedForwardNetwork): ANN model</dd>
+</dl>
+<dl class="method">
+<dt id="validpy.ANN.src.NeuralNetwork.NeuralNetwork.valid">
+<code class="descname">valid</code><span class="sig-paren">(</span><em>validation_set</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.NeuralNetwork.NeuralNetwork.valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the average euclidean distance activating
+the model over a validation set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>validation_set</strong> (<em>SupervisedDataSet</em>) &#8211; validation set</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">average euclidean distance</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.NeuralNetwork.initialize_connection">
+<code class="descclassname">validpy.ANN.src.NeuralNetwork.</code><code class="descname">initialize_connection</code><span class="sig-paren">(</span><em>connection</em>, <em>prev_layer</em>, <em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.NeuralNetwork.initialize_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a connection between two layers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>connection</strong> (<em>string</em>) &#8211; layer&#8217;s connection topology (possible values: full)</li>
+<li><strong>prev_layer</strong> (<em>NeuronLayer</em>) &#8211; first layer</li>
+<li><strong>layer</strong> (<em>NeuronLayer</em>) &#8211; second Layer</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">connection</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Connection</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.NeuralNetwork.initialize_layer">
+<code class="descclassname">validpy.ANN.src.NeuralNetwork.</code><code class="descname">initialize_layer</code><span class="sig-paren">(</span><em>function</em>, <em>length</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.NeuralNetwork.initialize_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a layer with the given parameters</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>function</strong> (<em>string</em>) &#8211; layer&#8217;s activation function (possible values: linear, sigmoid, gaussian)</li>
+<li><strong>length</strong> (<em>int</em>) &#8211; layer&#8217;s length</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">layer</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NeuronLayer</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-validpy.ANN.src.experimentKcross">
+<span id="validpy-ann-src-experimentkcross-module"></span><h2>validpy.ANN.src.experimentKcross module<a class="headerlink" href="#module-validpy.ANN.src.experimentKcross" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="validpy.ANN.src.experimentKcross.grid">
+<code class="descclassname">validpy.ANN.src.experimentKcross.</code><code class="descname">grid</code><span class="sig-paren">(</span><em>conf</em>, <em>data_sets</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.experimentKcross.grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the k-cross validation over all possible parameter combinations</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>conf</strong> (<em>JSON</em>) &#8211; configuration JSON</li>
+<li><strong>data_sets</strong> (<em>list[list[tuple(list[float], list[float])]]</em>) &#8211; examples as list of tuple (input, output)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.experimentKcross.k_cross_experiment">
+<code class="descclassname">validpy.ANN.src.experimentKcross.</code><code class="descname">k_cross_experiment</code><span class="sig-paren">(</span><em>hidden_layers</em>, <em>units</em>, <em>function</em>, <em>learning_rate</em>, <em>momentum</em>, <em>lr_decay</em>, <em>data_sets</em>, <em>out_folder</em>, <em>input_length</em>, <em>output_length</em>, <em>n_processes</em>, <em>csv=None</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.experimentKcross.k_cross_experiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the k-cross validation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hidden_layers</strong> (<em>int</em>) &#8211; Number of hidden layers</li>
+<li><strong>units</strong> (<em>int</em>) &#8211; Number of units for each hidden layer</li>
+<li><strong>function</strong> (<em>str</em>) &#8211; Network&#8217;s activation function (possible values: linear, sigmoid, gaussian)</li>
+<li><strong>learning_rate</strong> (<em>float</em>) &#8211; Learning rate value</li>
+<li><strong>momentum</strong> (<em>float</em>) &#8211; Momentum value</li>
+<li><strong>lr_decay</strong> (<em>float</em>) &#8211; Learning rate value</li>
+<li><strong>data_sets</strong> (<em>list[list[tuple(list[float], list[float])]]</em>) &#8211; List of the k data sets</li>
+<li><strong>out_folder</strong> (<em>str</em>) &#8211; Path to the output folder</li>
+<li><strong>input_length</strong> (<em>int</em>) &#8211; Input length</li>
+<li><strong>output_length</strong> (<em>int</em>) &#8211; Output length</li>
+<li><strong>n_processes</strong> (<em>int</em>) &#8211; Number of parallel processes</li>
+<li><strong>csv</strong> (<em>FileIO</em>) &#8211; Output csv file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Average error and average training time over the k experiments</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple(float, float)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.experimentKcross.k_train">
+<code class="descclassname">validpy.ANN.src.experimentKcross.</code><code class="descname">k_train</code><span class="sig-paren">(</span><em>hidden_layers</em>, <em>units</em>, <em>function</em>, <em>input_length</em>, <em>output_length</em>, <em>momentum</em>, <em>learning_rate</em>, <em>lr_decay</em>, <em>train</em>, <em>valid_bp</em>, <em>valid</em>, <em>folder</em>, <em>report</em>, <em>plot</em>, <em>net_path</em>, <em>q</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.experimentKcross.k_train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the training and the model validation, this function have to been called via Process()
+<a class="reference external" href="https://docs.python.org/3/library/multiprocessing.html">https://docs.python.org/3/library/multiprocessing.html</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hidden_layers</strong> (<em>int</em>) &#8211; number of hidden layers</li>
+<li><strong>units</strong> (<em>int</em>) &#8211; number of units for each hidden layer</li>
+<li><strong>function</strong> (<em>str</em>) &#8211; network&#8217;s activation function (possible values: linear, sigmoid, gaussian)</li>
+<li><strong>input_length</strong> (<em>int</em>) &#8211; input length</li>
+<li><strong>output_length</strong> (<em>int</em>) &#8211; output length</li>
+<li><strong>momentum</strong> (<em>float</em>) &#8211; momentum value</li>
+<li><strong>learning_rate</strong> (<em>float</em>) &#8211; learning rate value</li>
+<li><strong>lr_decay</strong> (<em>float</em>) &#8211; learning rate value</li>
+<li><strong>train</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; training set</li>
+<li><strong>valid_bp</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; backpropagation validation set</li>
+<li><strong>valid</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; validation set</li>
+<li><strong>folder</strong> (<em>str</em>) &#8211; path to the output experiment folder</li>
+<li><strong>report</strong> (<em>str</em>) &#8211; path to the output experiment report file (.txt)</li>
+<li><strong>plot</strong> (<em>str</em>) &#8211; path to the output experiment plot file (.png)</li>
+<li><strong>net_path</strong> &#8211; path to the output experiment model file (.xml)</li>
+<li><strong>q</strong> (<em>Queue</em>) &#8211; Queue</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">training time and average validation error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list[float]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.experimentKcross.main">
+<code class="descclassname">validpy.ANN.src.experimentKcross.</code><code class="descname">main</code><span class="sig-paren">(</span><em>conf_file</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.experimentKcross.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads configuration file and runs the k-cross validation experiments</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>conf_file</strong> (<em>str</em>) &#8211; Path to the configuration file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.experimentKcross.split_data_set_file">
+<code class="descclassname">validpy.ANN.src.experimentKcross.</code><code class="descname">split_data_set_file</code><span class="sig-paren">(</span><em>file_name</em>, <em>input_length</em>, <em>output_length</em>, <em>k</em>, <em>separator='</em>, <em>'</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.experimentKcross.split_data_set_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the data set from csv, split the input and the output,
+shuffle the example list and split it in to k subsets</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_name</strong> (<em>str</em>) &#8211; path to the csv file</li>
+<li><strong>input_length</strong> (<em>int</em>) &#8211; input length</li>
+<li><strong>output_length</strong> (<em>int</em>) &#8211; output length</li>
+<li><strong>k</strong> (<em>int</em>) &#8211; number of subsets</li>
+<li><strong>separator</strong> (<em>Optional[str]</em>) &#8211; csv file separators, default = &#8216;,&#8217;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list of subsets</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list[list[tuple]]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="validpy.ANN.src.experimentKcross.validates">
+<code class="descclassname">validpy.ANN.src.experimentKcross.</code><code class="descname">validates</code><span class="sig-paren">(</span><em>net_path</em>, <em>validation_set</em><span class="sig-paren">)</span><a class="headerlink" href="#validpy.ANN.src.experimentKcross.validates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the average euclidean distance activating
+the model over a validation set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>net_path</strong> (<em>str</em>) &#8211; Path to the model</li>
+<li><strong>validation_set</strong> (<em>list[tuple(list[float], list[float])]</em>) &#8211; Validation set</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">average euclidean distance</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-validpy.ANN.src">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-validpy.ANN.src" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="validpy.ANN_vs_SVM.html" class="btn btn-neutral float-right" title="validpy.ANN_vs_SVM package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="validpy.ANN.html" class="btn btn-neutral" title="validpy.ANN package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Lorenzo De Mattei.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
